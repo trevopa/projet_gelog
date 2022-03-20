@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Search</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Si la page Wikipédia contient des tableaux, ils ont été téléchargés !</h1>
+	<p> Veuillez consulter le dossier src/main/resources/csv. Pour information, voici les informations que vous avez fourni dans votre formulaire : </p>
+    <p th:text="'Nom: ' + ${search.name}" />
+    <p th:text="'Langue: ' + ${search.language}" />
+    <a href="/search">Recommencer</a>
+    
+
+</body>
+</html>
